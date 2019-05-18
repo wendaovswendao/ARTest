@@ -1,0 +1,24 @@
+//
+//  AREngineCommomDef.pch
+//  BaiduARSDK
+//
+//  Created by nick on 16/11/25.
+//  Copyright © 2016年 baidu. All rights reserved.
+//
+
+#ifndef AREngineCommomDef_pch
+#define AREngineCommomDef_pch
+
+#import "ARPEngineMessageType.h"
+#import "NSObject+AREngineMessageExt.h"
+
+#define kNotificationNameMessageFromEngine @"NotificationNameMessageFromEngine"
+
+#ifdef DEBUG
+#define ARPEngineLog(x, ...) NSLog(x, ## __VA_ARGS__);
+#else
+#define ARPEngineLog(x, ...)
+#endif
+
+
+#endif /* AREngineCommomDef_pch */
